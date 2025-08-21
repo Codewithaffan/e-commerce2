@@ -15,12 +15,12 @@ export default function Home() {
         <BannerCarousel />
 
         {/* ⭐ Featured Products */}
-        <section className="lg:my-16 ">
+        <section className="lg:mb-10">
           <Products />
         </section>
 
         {/* ===================== Categories ===================== */}
-        <section className="space-y-20">
+        <section>
           {/* 1. Basic Tee */}
           <Categories
             tagLine="Essential Wear"

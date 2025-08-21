@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="max-w-screen-xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Logo & About */}
         <div>
-          <h2 className="text-2xl font-bold text-white mb-4">Refilley</h2>
+          <h2 className="text-2xl font-bold text-white mb-4">Refilly</h2>
           <p className="text-sm leading-relaxed">
             Your one-stop shop for premium fashion at unbeatable prices.
             Stylish, affordable, and delivered to your door.
@@ -60,7 +60,7 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div className="mt-10 border-t border-gray-700 pt-6 flex flex-col md:flex-row items-center justify-between gap-4 max-w-screen-xl mx-auto px-4">
         <p className="text-sm text-gray-400">
-          © {new Date().getFullYear()} Refilley | All Rights Reserved
+          © {new Date().getFullYear()} Refilly | All Rights Reserved
         </p>
         <div className="flex gap-4 text-gray-400">
           <Link href="#"><FaFacebookF className="hover:text-yellow-400 cursor-pointer" /></Link>

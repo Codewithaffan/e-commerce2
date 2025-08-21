@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { ShoppingCart, LogIn, X } from "lucide-react";
+import { ShoppingCart, LogIn, X, Search } from "lucide-react"; // added Search
 import { useProducts } from "@/context/ProductContext";
 import { useAuth } from "@/context/AuthContext";
 
@@ -23,7 +23,7 @@ export default function Navbar() {
   }, [isOpen]);
 
   return (
-    <nav className="w-full bg-white border-b border-gray-200  z-40">
+    <nav className="w-full bg-white border-b border-gray-200 z-40">
       <div className="max-w-screen-xl mx-auto p-4 flex items-center justify-between">
         {/* Left Menu (Desktop Only) */}
         <div className="hidden md:flex items-center space-x-8">
@@ -53,7 +53,7 @@ export default function Navbar() {
           {/* Cart Icon */}
           <button
             onClick={() => setCartOpen(true)}
-            className="relative p-2 rounded-full  hover:bg-gray-100"
+            className="relative p-2 rounded-full hover:bg-gray-100"
           >
             <ShoppingCart className="w-6 h-6 text-gray-700" />
             {cart.length > 0 && (
@@ -61,6 +61,15 @@ export default function Navbar() {
                 {cart.length}
               </span>
             )}
+          </button>
+
+          {/* Search Icon (Desktop) */}
+          <button
+            onClick={() => alert("Search feature coming soon!")}
+            className="p-2 rounded-full hover:bg-gray-100 text-gray-700"
+            aria-label="Search"
+          >
+            <Search className="w-6 h-6" />
           </button>
 
           {/* User Auth */}
@@ -103,23 +112,14 @@ export default function Navbar() {
             )}
           </button>
 
-          {/* Auth Mobile */}
-          {user ? (
-            <button
-              onClick={logOut}
-              className="p-2 rounded-lg bg-gray-100 hover:bg-gray-200 text-gray-800"
-            >
-              Logout
-            </button>
-          ) : (
-            <button
-              onClick={openLogin}
-              className="p-2 rounded-lg hover:bg-gray-100 text-gray-800"
-              aria-label="Login"
-            >
-              <LogIn className="w-6 h-6" />
-            </button>
-          )}
+          {/* Search Icon (Mobile) */}
+          <button
+            onClick={() => alert("Search feature coming soon!")}
+            className="p-2 rounded-full hover:bg-gray-100 text-gray-700"
+            aria-label="Search"
+          >
+            <Search className="w-6 h-6" />
+          </button>
 
           {/* Mobile Menu Button */}
           <button
@@ -175,7 +175,7 @@ export default function Navbar() {
                 About
               </Link>
 
-              {/* Auth Buttons */}
+              {/* Auth Buttons (inside menu) */}
               {user ? (
                 <button
                   onClick={() => {
