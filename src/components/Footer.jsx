@@ -2,7 +2,8 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6"; // ✅ new X logo
 
 export default function Footer() {
   return (
@@ -22,7 +23,6 @@ export default function Footer() {
           <h3 className="text-lg font-semibold text-white mb-4">Quick Links</h3>
           <ul className="space-y-2">
             <li><Link href="/" className="hover:text-yellow-400">Home</Link></li>
-            <li><Link href="/shop" className="hover:text-yellow-400">Shop</Link></li>
             <li><Link href="/about" className="hover:text-yellow-400">About Us</Link></li>
             <li><Link href="/contact" className="hover:text-yellow-400">Contact</Link></li>
             <li><Link href="/faq" className="hover:text-yellow-400">FAQ</Link></li>
@@ -60,11 +60,11 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div className="mt-10 border-t border-gray-700 pt-6 flex flex-col md:flex-row items-center justify-between gap-4 max-w-screen-xl mx-auto px-4">
         <p className="text-sm text-gray-400">
-          © {new Date().getFullYear()} Refilly | All Rights Reserved
+          © {new Date().getFullYear()} Refilly | All Rights Reserved  | Designed by Sharique and Affan
         </p>
         <div className="flex gap-4 text-gray-400">
           <Link href="#"><FaFacebookF className="hover:text-yellow-400 cursor-pointer" /></Link>
-          <Link href="#"><FaTwitter className="hover:text-yellow-400 cursor-pointer" /></Link>
+          <Link href="#"><FaXTwitter className="hover:text-yellow-400 cursor-pointer" /></Link> {/* ✅ X logo */}
           <Link href="#"><FaInstagram className="hover:text-yellow-400 cursor-pointer" /></Link>
           <Link href="#"><FaYoutube className="hover:text-yellow-400 cursor-pointer" /></Link>
         </div>

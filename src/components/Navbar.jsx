@@ -174,6 +174,34 @@ export default function Navbar() {
               >
                 About
               </Link>
+              <Link
+                href="/contact"
+                onClick={() => setIsOpen(false)}
+                className="hover:text-blue-500"
+              >
+                Contact
+              </Link>
+              <Link
+                href="/returns"
+                onClick={() => setIsOpen(false)}
+                className="hover:text-blue-500"
+              >
+                Return Policy
+              </Link>
+               <Link
+                href="/shipping"
+                onClick={() => setIsOpen(false)}
+                className="hover:text-blue-500"
+              >
+                Shipping Info.
+              </Link>
+              <Link
+                href="/faq"
+                onClick={() => setIsOpen(false)}
+                className="hover:text-blue-500"
+              >
+                FAQs
+              </Link>
 
               {/* Auth Buttons (inside menu) */}
               {user ? (

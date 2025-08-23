@@ -13,7 +13,7 @@ const categories = [
   { id: 3, name: "Aesthetic Prints", image: "/assets/aesthetic.png" },
   { id: 4, name: "Minimal Prints", image: "/assets/minimal.png" },
   { id: 5, name: "Quotes Tees", image: "/assets/quotes.png" },
-  { id: 6, name: "Regular Fit", image: "/assets/tshirt4.png" },
+  { id: 6, name: "Wonderlust", image: "/assets/tshirt4.png" },
   { id: 7, name: "Cartoon Prints", image: "/assets/cartoon.png" },
   { id: 8, name: "Marvel Prints", image: "/assets/tshirt3.png" },
 ];
@@ -91,6 +91,24 @@ export default function Products() {
           >
             Discover our premium collection, with style & energy.
           </motion.p>
+
+          {/* ✅ Buttons Section (right after <p>) */}
+          <div className="flex justify-center gap-6 mt-6">
+            <motion.button
+              whileHover={{ scale: 1.08 }}
+              whileTap={{ scale: 0.95 }}
+              className="px-6 py-3 rounded-xl bg-indigo-600 text-white font-semibold shadow-md hover:bg-indigo-700 transition-all"
+            >
+              Regular Fit
+            </motion.button>
+            <motion.button
+              whileHover={{ scale: 1.08 }}
+              whileTap={{ scale: 0.95 }}
+              className="px-6 py-3 rounded-xl bg-gray-900 text-white font-semibold shadow-md hover:bg-gray-800 transition-all"
+            >
+              Oversize Fit
+            </motion.button>
+          </div>
         </div>
 
         {/* Products Grid */}
@@ -99,9 +117,9 @@ export default function Products() {
             <motion.div
               key={product.id}
               data-aos={index % 2 === 0 ? "zoom-out-left" : "zoom-out-right"}
-              whileHover={{ scale: 1.08, rotate: 2 }}
+              whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              transition={{ type: "spring", stiffness: 250 }}
+              transition={{ duration: 0.3, ease: "easeInOut" }}
               className="hover:shadow-2xl rounded-2xl overflow-hidden transition-all bg-white/80 backdrop-blur-sm"
             >
               <Cart product={product} />

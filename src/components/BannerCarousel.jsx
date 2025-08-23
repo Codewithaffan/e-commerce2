@@ -17,7 +17,7 @@ export default function Banner() {
       setCurrentIndex((prevIndex) =>
         prevIndex === banners.length - 1 ? 0 : prevIndex + 1
       );
-    }, 3000); // change every 3s
+    }, 4000); // change every 3s
     return () => clearInterval(interval);
   }, []);
 

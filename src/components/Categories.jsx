@@ -91,10 +91,7 @@ const Categories = ({
               <motion.div
                 key={product?.id ?? idx}
                 data-aos={idx % 2 === 0 ? "zoom-out-left" : "zoom-out-right"}
-                whileHover={{ scale: 1.08, rotate: 2 }}
-                whileTap={{ scale: 0.95 }}
-                transition={{ type: "spring", stiffness: 250 }}
-                className="hover:shadow-2xl rounded-2xl overflow-hidden transition-all bg-white/80 backdrop-blur-sm"
+                className="rounded-2xl overflow-hidden transition-all bg-white/80 backdrop-blur-sm shadow-md"
               >
                 <Cart product={product} isSlider={isSlider} />
               </motion.div>

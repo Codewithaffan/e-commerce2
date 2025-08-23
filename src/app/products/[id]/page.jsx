@@ -96,8 +96,8 @@ export default function ProductDetailPage() {
                   <div className="flex gap-3 items-center">
                     <MapPin size={16} />
                     <p>
-                      Bhiwandi Dhamankar Naka Near Ammar Hotel Amina Compound
-                      Clauch By Lastchoice&com 421302
+                      Bhiwandi Gaibi Ngar Ansar Mohalla 
+                      Refilly  421302
                     </p>
                   </div>
                 </div>

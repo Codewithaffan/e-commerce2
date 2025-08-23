@@ -32,9 +32,14 @@ const Cart = ({ product, isSlider }) => {
       <p className="text-gray-600 lg:text-sm text-xs">
         {product.description || "Stylish and comfortable tee for all occasions."}
       </p>
-      <p className="font-semibold text-lg mt-1 text-primary-500">
-        {product.price}
-      </p>
+
+      {/* ✅ Price + Cut Price (Fixed 999) */}
+      <div className="flex items-center gap-2 mt-1">
+        <span className="font-semibold text-lg text-primary-500">
+          {product.price}
+        </span>
+        <span className="text-sm text-gray-500 line-through">₹999</span>
+      </div>
 
       {/* View More (smaller button) */}
       <button className="mt-3 px-4 py-2 bg-yellow-500 rounded-sm text-gray-800 cursor-pointer hover:bg-yellow-600 transition text-sm font-medium">

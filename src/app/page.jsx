@@ -1,7 +1,7 @@
 import BannerCarousel from "@/components/BannerCarousel";
 import Products from "@/components/Products";
 import Service from "@/components/Service";
-
+import Instagram from "../components/Instagram";
 import Categories from "../components/Categories";
 
 // ✅ Import categoriesData
@@ -101,7 +101,8 @@ export default function Home() {
             isSlider={true}
           />
         </section>
-
+        {/* Instagram */}
+        <Instagram />
         {/* 🛠 Services Section */}
         <section className="my-20">
           <Service />
