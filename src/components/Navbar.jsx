@@ -39,10 +39,27 @@ export default function Navbar() {
           >
             About
           </Link>
+          <Link
+            href="/contact"
+            className="text-gray-800 font-medium hover:text-blue-500"
+          >
+            Contact
+          </Link>
+          <Link
+            href="/faq"
+            className="text-gray-800 font-medium hover:text-blue-500"
+          >
+            FAQs
+          </Link>
         </div>
 
         {/* Logo */}
-        <Link href="/" className="flex items-center">
+        <Link href="/" className="flex items-center gap-2">
+          <img
+            src="/assets/refilly.png"
+            alt="Refilly Logo"
+            className="h-10 w-auto md:h-10"
+          />
           <span className="text-2xl md:text-3xl font-extrabold text-gray-600">
             Refilly
           </span>
@@ -188,7 +205,7 @@ export default function Navbar() {
               >
                 Return Policy
               </Link>
-               <Link
+              <Link
                 href="/shipping"
                 onClick={() => setIsOpen(false)}
                 className="hover:text-blue-500"

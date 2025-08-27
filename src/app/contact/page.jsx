@@ -41,8 +41,9 @@ export default function Contact() {
             </div>
             <div className="mt-2 flex items-center gap-4">
               <Mail className="w-5 h-5 text-blue-600" />
-              <a href="mailto:firoz@refilly.com" className="text-gray-700 hover:text-blue-600">
-                firoz@refilly.com
+              <a href="mailto:shahfiroz677@gmail.com" className="text-gray-700 hover:text-blue-600">
+                shahfiroz677@gmail.com
+
               </a>
             </div>
           </div>
@@ -113,8 +114,8 @@ export default function Contact() {
             </div>
             <div className="mt-2 flex items-center gap-4">
               <Mail className="w-5 h-5 text-blue-600" />
-              <a href="mailto:tauseef@refilly.com" className="text-gray-700 hover:text-blue-600">
-                tauseef@refilly.com
+              <a href="mailto:ansaritauheed003@gmail.com " className="text-gray-700 hover:text-blue-600">
+                ansaritauheed003@gmail.com 
               </a>
             </div>
           </div>
