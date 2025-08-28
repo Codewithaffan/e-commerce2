@@ -60,13 +60,13 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div className="mt-10 border-t border-gray-700 pt-6 flex flex-col md:flex-row items-center justify-between gap-4 max-w-screen-xl mx-auto px-4">
         <p className="text-sm text-gray-400">
-          © {new Date().getFullYear()} Refilly | All Rights Reserved  | Designed by Sharique and Affan
+          © {new Date().getFullYear()} Refilly | All Rights Reserved  | Designed by Affan & Sharique
         </p>
         <div className="flex gap-4 text-gray-400">
-          <Link href="#"><FaFacebookF className="hover:text-yellow-400 cursor-pointer" /></Link>
-          <Link href="#"><FaXTwitter className="hover:text-yellow-400 cursor-pointer" /></Link> {/* ✅ X logo */}
-          <Link href="#"><FaInstagram className="hover:text-yellow-400 cursor-pointer" /></Link>
-          <Link href="#"><FaYoutube className="hover:text-yellow-400 cursor-pointer" /></Link>
+          <Link href="https://www.facebook.com/profile.php?id=61579820488278&rdid=5KTVOAkYrSUQvqD7&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1JjDwJX7RY%2F#"><FaFacebookF className="hover:text-yellow-400 cursor-pointer" /></Link>
+          <Link href="https://x.com/Refilly_?t=9ipblt2ac5iIHQaXmbQOyw&s=08"><FaXTwitter className="hover:text-yellow-400 cursor-pointer" /></Link> {/* ✅ X logo */}
+          <Link href="https://www.instagram.com/refilly_streetstyle?igsh=MTVkdjYwbnF1dDF1eg%3D%3D"><FaInstagram className="hover:text-yellow-400 cursor-pointer" /></Link>
+          <Link href="youtube.com/@refillystreetstyle?si=uIfD_pyegddNgMXL"><FaYoutube className="hover:text-yellow-400 cursor-pointer" /></Link>
         </div>
       </div>
     </footer>
